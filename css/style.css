@@ -228,8 +228,58 @@ body {
 /*footer start*/
 .footer {
   color: #99999d;
-  border-radius: 60px;
+  border-radius: 60px 60px 0 0;
   background: #34353d;
+  background-repeat: no-repeat;
+  padding: 60px 0 64px;
 }
 
+.footer__inner {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer__copyright {
+  color: #f8f3ef;
+  font-size: 12px;
+}
+
+.footer__title {
+  color: #f8f3ef;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+.footer__item {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+.footer__contacts-adress {
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer__contacts-phone {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 42px 0;
+  display: inline-block;
+}
+
+.footer__contacts-social {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer__contacts-social-item {
+  margin-right: 13px;
+}
+
+.footer__contacts,
+.footer__info,
+.footer__menu,
+.footer__logo {
+  margin-right: 20px;
+}
 /*footer end*/
