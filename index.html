@@ -11,7 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&family=Montserrat:wght@400;500;600&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -123,10 +141,8 @@
           <div class="container">
             <div class="category__wrapper">
               <div class="category__title">
-                <h2 class="category__title-top">
-                  Категории <sup>9 категорий</sup>
-                </h2>
-                <h2 class="category__title-bottom">товаров</h2>
+                <h2 class="title-top">Категории <sup>9 категорий</sup></h2>
+                <h2 class="title-bottom">товаров</h2>
               </div>
               <a class="category__link" href="#">Все товары</a>
             </div>
@@ -260,6 +276,247 @@
                   /></a>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="container">
+            <h2 class="promo__title-top title-top">есть вопросы?</h2>
+            <h2 class="title-bottom">с радостью ответим на них!</h2>
+            <div class="promo__content">
+              <form class="promo__form">
+                <div class="promo__form-name">
+                  <label class="promo__form-label" for="name">Ваше имя </label>
+                  <input
+                    class="promo__form-input"
+                    id="name"
+                    type="text"
+                    placeholder="Имя"
+                  />
+                </div>
+                <div class="promo__form-phone">
+                  <label class="promo__form-label" for="phone"
+                    >Ваш телефон
+                  </label>
+                  <input
+                    class="promo__form-input"
+                    id="phone"
+                    type="tel"
+                    placeholder="(999) 999-99-99"
+                  />
+                </div>
+                <button class="promo__form-btn btn" type="submit">
+                  Оставить заявку
+                </button>
+              </form>
+              <div class="promo-contacts">
+                <p class="promo-contacts-text">
+                  Оставьте заявку или позвоните нам по номеру:
+                </p>
+                <a class="promo-contacts-phone" href="tel:+79295908287"
+                  >+7 (929) 590 82-87</a
+                >
+              </div>
+            </div>
+            <p class="promo__agreement">
+              Нажимая на кнопку “Оставить заявку”, вы соглашаетесь с Политикой
+              конфиденциальности данных
+            </p>
+          </div>
+        </section>
+
+        <section class="projects">
+          <div class="container">
+            <div class="projects__content">
+              <div class="projects__title">
+                <h2 class="title-top">реализовали</h2>
+                <h2 class="title-bottom">более 500 проектов</h2>
+              </div>
+              <div class="projects__buttons">
+                <a class="projects__buttons-free" href="#">Бесплатный замер</a>
+                <a class="projects__buttons-link" href="#">Все проекты</a>
+              </div>
+            </div>
+
+            <div class="projects__swiper">
+              <div class="swiper-wrapper">
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/1.png"
+                      alt="image"
+                  /></a>
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">
+                      Квартира в Санкт-Петербурге
+                    </h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/2.png"
+                      alt="image"
+                  /></a>
+
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">Оформление стены</h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/1.png"
+                      alt="image"
+                  /></a>
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">
+                      Квартира в Санкт-Петербурге
+                    </h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/2.png"
+                      alt="image"
+                  /></a>
+
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">Оформление стены</h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/1.png"
+                      alt="image"
+                  /></a>
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">
+                      Квартира в Санкт-Петербурге
+                    </h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/2.png"
+                      alt="image"
+                  /></a>
+
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">Оформление стены</h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/1.png"
+                      alt="image"
+                  /></a>
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">
+                      Квартира в Санкт-Петербурге
+                    </h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/2.png"
+                      alt="image"
+                  /></a>
+
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">Оформление стены</h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/1.png"
+                      alt="image"
+                  /></a>
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">
+                      Квартира в Санкт-Петербурге
+                    </h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="projects__slide swiper-slide">
+                  <a class="projects__slide-image" href="#"
+                    ><img
+                      class="projects__slide-img"
+                      src="images/projecrs/2.png"
+                      alt="image"
+                  /></a>
+
+                  <div class="projects__slide-content">
+                    <h3 class="projects__slide-title">Оформление стены</h3>
+                    <a class="projects__slide-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__swiper-nav">
+                <img
+                  class="projects__btn-prev"
+                  src="images/prev.svg"
+                  alt="prev"
+                />
+                <div class="projects__pagination"></div>
+                <img
+                  class="projects__btn-next"
+                  src="images/next.svg"
+                  alt="next"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="container">
+            <div class="video__content">
+              <div class="video__title">
+                <h2 class="title-top">СМОТРИТЕ НАС</h2>
+                <h2 class="title-bottom">на YOUTUBE</h2>
+              </div>
+
+              <a
+                class="video__button-link"
+                target="_blank"
+                href="https://youtube.com/@ambarwood?si=4hrTWnDII_IjF66l"
+                >Перейти в канал</a
+              >
+            </div>
+            <div class="video__fancybox">
+              <img class="video__img" src="images/bg-video.png" alt="image" />
+              <a
+                class="video__btn-play"
+                data-fancybox
+                href="https://youtu.be/v9aCk-D9hro?si=c4ip0KLsWzsnYP9K"
+              >
+                <img src="images/play.svg" alt="play" />
+              </a>
             </div>
           </div>
         </section>
