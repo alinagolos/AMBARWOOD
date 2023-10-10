@@ -705,3 +705,240 @@ body {
   left: 40%;
 }
 /* video end*/
+
+/*cooperate start*/
+
+.cooperate {
+  background-image: url(../images/cooperate-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 79px 0 68px;
+  margin-bottom: 66px;
+}
+
+.cooperate__title-top {
+  color: #f8f3ef;
+}
+
+.cooperate__text {
+  color: #f8f3ef;
+  font-size: 18px;
+  font-weight: 400;
+  width: 423px;
+  margin-bottom: 35px;
+}
+.title-bottom {
+  margin-bottom: 26px;
+}
+.cooperate__form {
+  margin-top: 78px;
+}
+
+.cooperate__form {
+  margin-right: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 79px;
+}
+
+.cooperate__form-name,
+.cooperate__form-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.cooperate__form-input {
+  margin: 0;
+  width: 250px;
+  padding: 20px 10px 20px 17px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  border: none;
+  margin-right: 21px;
+}
+
+.cooperate__form-btn {
+  border: 0;
+  width: 290px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 21.2px 41px;
+}
+
+.cooperate__form-input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 141.523%;
+}
+
+.iti__selected-flag {
+  background-color: #f5f5f5 !important;
+}
+
+.iti__selected-dial-code {
+  font-size: 14px;
+}
+.cooperate__form-label {
+  color: #f8f3ef;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cooperate__agreement {
+  margin-top: 22px;
+  color: #e6e6e6;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/*cooperate end*/
+
+/*contacts start*/
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contacts__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__buttons-text {
+  width: 125px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 15px;
+}
+
+.contacts__buttons-btn {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #d8a47a;
+  background-color: inherit;
+}
+
+.mixitup-control-active {
+  border: 1px solid var(#e2ae80);
+  background: var(--123, linear-gradient(90deg, #e2ae80 0.1%, #cc9872 99.91%));
+  color: #fff;
+  font-weight: 700;
+}
+
+.contacts__buttons-btn--moscow {
+  padding: 22px 58px;
+  margin-right: 9px;
+}
+
+.contacts__buttons-btn--stpeter {
+  padding: 22px 19px;
+}
+
+.contacts__city {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border: solid 1px #e2ae80;
+  border-radius: 25px;
+  padding: 49px 107px 51px 54px;
+  margin-bottom: 68px;
+}
+
+.contacts__content-adress {
+  font-weight: 500;
+  margin-bottom: 29px;
+}
+
+.contacts__content-phone {
+  display: flex;
+  justify-content: start;
+}
+
+.contacts__content-phone-tel {
+  font-weight: 500;
+  margin-right: 32px;
+  padding: 3px 0;
+  margin-bottom: 29px;
+}
+
+.contacts__content-mail {
+  color: #ce9a74;
+  font-weight: 500;
+  border-bottom: 1px solid #ce9a74;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.contacts__content-text {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+
+.contacts__content-sub {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.contacts__conten-social {
+  display: flex;
+  justify-content: start;
+}
+
+.contacts__content-social-link {
+  margin-right: 9px;
+}
+/*contacts end*/
+
+/*subscribe start*/
+.subscribe__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.subscribe__title {
+  font-family: Tenor Sans;
+  font-size: 30px;
+  line-height: 116%;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.subscribe__text {
+  font-size: 18px;
+}
+.subscribe__form {
+  margin-bottom: 17px;
+}
+.subscribe__form-input {
+  padding: 19.2px 24px;
+  border-radius: 5px;
+  border: 1px solid #c38f65;
+  background: #fff;
+  width: 260px;
+}
+.subscribe__form-input::placeholder {
+  color: #bcbcbc;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 141.523%;
+}
+
+.subscribe__form-btn {
+  padding: 20px 41px;
+  border: none;
+  width: 257px;
+}
+
+.subscribe__forms-agreement {
+  color: #8f8f8f;
+  font-size: 12px;
+  font-weight: 300;
+}
+/*subscribe end*/
