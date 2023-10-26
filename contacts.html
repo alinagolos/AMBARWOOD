@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/mixitup.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -168,178 +169,187 @@
                 </li>
 
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#"> Каталог /</a>
-                </li>
-                <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#">
-                    Амбарная доска для стен
-                  </a>
+                  <a class="breadcrumbs__link" href="#"> Наши работы </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-        <section class="banner">
+        <section
+          class="banner-one"
+          style="background-image: url(images/contacts-banner.png)"
+        >
           <div class="container-fluid">
-            <div
-              class="banner__inner banner__inner-catalog"
-              style="background-image: url(images/bannercatalog-bg.png)"
-            >
-              <div class="banner__content">
-                <h1 class="banner__title">Амбарная доска для стен</h1>
-                <ul class="banner__list">
-                  <li class="banner__list-item">Быстрая доставка по РФ</li>
-                  <li class="banner__list-item">Все оттенки в наличии</li>
-                  <li class="banner__list-item">Шоурумы в Москве и Спб</li>
-                </ul>
-              </div>
-              <div class="banner__buttons">
-                <a class="banner__btn btn" href="#">Перейти в каталог</a>
-              </div>
-            </div>
+            <h3 class="banner-one__title">Контакты</h3>
           </div>
         </section>
 
-        <section class="catalog-one">
+        <section class="contacts">
           <div class="container">
-            <ul class="catalog-one__list">
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
+            <div class="contacts__inner">
+              <div class="contacts__title">
+                <h2 class="title-top">работаем</h2>
+                <h2 class="title-bottom">по всей россии</h2>
+              </div>
+              <div class="contacts__buttons">
+                <p class="contacts__buttons-text">
+                  Выберите интересующий шоурум:
+                </p>
+                <button
+                  class="contacts__buttons-btn contacts__buttons-btn--moscow"
+                  data-filter=".moscow"
+                >
+                  Москва
+                </button>
+                <button
+                  class="contacts__buttons-btn contacts__buttons-btn--stpeter"
+                  data-filter=".stpeter"
+                >
+                  Санкт-Петербург
+                </button>
+              </div>
+            </div>
 
-                <p class="catalog-one__item-price">3400 руб.</p>
+            <div class="contacts__cities-one" id="fancybox1">
+              <div class="contacts__city mix moscow">
+                <div class="contacts__city-map">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Москва</a
+                    ><a
+                      href="https://yandex.ru/maps/213/moscow/house/timiryazevskaya_ulitsa_1s2/Z04YcwFoTkcFQFtvfXRxd3VibQ==/?indoorLevel=1&ll=37.568722%2C55.806919&utm_medium=mapframe&utm_source=maps&z=16.69"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Тимирязевская улица, 1с2 — Яндекс Карты</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.568722%2C55.806919&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc1ODc0NBJH0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCi0LjQvNC40YDRj9C30LXQstGB0LrQsNGPINGD0LvQuNGG0LAsIDHRgTIiCg1gRhZCFUk6X0I%2C&z=16.69"
+                      width="603"
+                      height="326"
+                      frameborder="1"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="contacts__city-content">
+                  <p class="contacts__content-adress">
+                    <strong>Москва</strong> <br />
+                    ул. Тимирязевская, д. 1, стр. 2
+                  </p>
 
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
+                  <div class="contacts__content-phone">
+                    <a
+                      class="contacts__content-phone-tel"
+                      href="tel:+79295908287"
+                      >+7 (929) 590 82-87</a
+                    >
+                    <a href="#"
+                      ><img src="images/whatsapp1.svg" alt="whatsapp"
+                    /></a>
+                  </div>
+                  <a
+                    class="contacts__content-mail"
+                    href="mailto:we@ambarwood.ru "
+                    >we@ambarwood.ru</a
+                  >
+                  <p class="contacts__content-text">
+                    По вопросам сотрудничества
+                  </p>
+                  <p class="contacts__content-sub">
+                    Подписывайте на наши соц.сети:
+                  </p>
+                  <div class="contacts__conten-social">
+                    <a class="contacts__content-social-link" href="#"
+                      ><img src="images/vk1.svg" alt="vk"
+                    /></a>
+                    <a class="contacts__content-social-link" href="#"
+                      ><img src="images/youtube1.svg" alt="youtube"
+                    /></a>
+                  </div>
+                </div>
+              </div>
 
-                <p class="catalog-one__item-price">3400 руб.</p>
+              <div class="contacts__city mix stpeter">
+                <div class="contacts__city-map">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Санкт‑Петербург</a
+                    ><a
+                      href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_shvetsova_41/Z0kYdA5hSEMDQFtjfXR4dnhlZA==/?ll=30.291164%2C59.897461&utm_medium=mapframe&utm_source=maps&z=16.69"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Яндекс Карты</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=30.291164%2C59.897461&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQ0ODY2NxJK0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQu9C40YbQsCDQqNCy0LXRhtC-0LLQsCwgNDEiCg1OVPJBFf-Wb0I%2C&z=16.69"
+                      width="603"
+                      height="326"
+                      frameborder="1"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="contacts__city-content">
+                  <p class="contacts__content-adress">
+                    <strong>Санкт-Петербург</strong>
+                    <br />
+                    ул. Швецова, д.41К
+                  </p>
 
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
-
-                <p class="catalog-one__item-price">3400 руб.</p>
-
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
-
-                <p class="catalog-one__item-price">3400 руб.</p>
-
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
-
-                <p class="catalog-one__item-price">3400 руб.</p>
-
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
-
-                <p class="catalog-one__item-price">3400 руб.</p>
-
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
-
-                <p class="catalog-one__item-price">3400 руб.</p>
-
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
-
-                <p class="catalog-one__item-price">3400 руб.</p>
-
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-              <li class="catalog-one__item">
-                <img
-                  class="catalog-one__item-img"
-                  src="images/catalog-img.png"
-                  alt="img"
-                />
-                <h4 class="catalog-one__item-title">
-                  Амбарная доска коньячная мягкой шлифовки
-                </h4>
-
-                <p class="catalog-one__item-price">3400 руб.</p>
-
-                <a class="btn catalog__btn" href="#">Подробнее</a>
-                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
-              </li>
-            </ul>
+                  <div class="contacts__content-phone">
+                    <a
+                      class="contacts__content-phone-tel"
+                      href="tel:+79295908287"
+                      >+7 (929) 590 82-87</a
+                    >
+                    <a class="contacts__content-phone-link" href="#"
+                      ><img src="images/whatsapp1.svg" alt="whatsapp"
+                    /></a>
+                  </div>
+                  <a
+                    class="contacts__content-mail"
+                    href="mailto:we@ambarwood.ru "
+                    >we@ambarwood.ru</a
+                  >
+                  <p class="contacts__content-text">
+                    По вопросам сотрудничества
+                  </p>
+                  <p class="contacts__content-sub">
+                    Подписывайте на наши соц.сети:
+                  </p>
+                  <div class="contacts__conten-social">
+                    <a class="contacts__content-social-link" href="#"
+                      ><img src="images/vk1.svg" alt="vk"
+                    /></a>
+                    <a class="contacts__content-social-link" href="#"
+                      ><img src="images/youtube1.svg" alt="youtube"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -476,6 +486,14 @@
         </div>
       </footer>
     </div>
+
     <script src="js/script.js"></script>
+    <script>
+      var mixer3 = mixitup('.contacts__cities-one', {
+        load: {
+          filter: '.moscow',
+        },
+      });
+    </script>
   </body>
 </html>

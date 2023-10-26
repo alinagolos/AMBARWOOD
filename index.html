@@ -46,65 +46,117 @@
                 <a class="header__menu-link" href="#">Каталог</a>
                 <ul class="header__submenu">
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#"
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
                       >Амбарная доска для стен
                     </a>
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#"
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
                       >Старая половая доска</a
                     >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#"
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
                       >Старые балки и фальшбалки</a
                     >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#">Стеновые панели</a>
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
+                      >Стеновые панели</a
+                    >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#"> Двери</a>
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
+                    >
+                      Двери</a
+                    >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#">
+                    <a class="header__submenu-link" target="_blank" href="#">
                       Мебель из старых лодок</a
                     >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#"> Зеркала</a>
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
+                    >
+                      Зеркала</a
+                    >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#"
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
                       >Ковры (винтажные)</a
                     >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#">
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
+                    >
                       Старинный кирпич (императорский)</a
                     >
                   </li>
                   <li class="header__submenu-item">
-                    <a class="header__submenu-link" href="#">Услуги</a>
+                    <a
+                      class="header__submenu-link"
+                      target="_blank"
+                      href="catalog.html"
+                      >Услуги</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Об амбарной доске</a>
+                <a
+                  class="header__menu-link"
+                  target="_blank"
+                  href="about-plank.html"
+                  >Об амбарной доске</a
+                >
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="gallery.html" target="_blank"
+                <a class="header__menu-link" target="_blank" href="gallery.html"
                   >Наши работы</a
                 >
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">О нас</a>
+                <a class="header__menu-link" target="_blank" href="about.html"
+                  >О нас</a
+                >
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Блог</a>
+                <a class="header__menu-link" target="_blank" href="blog.html"
+                  >Блог</a
+                >
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Контакты</a>
+                <a
+                  class="header__menu-link"
+                  target="_blank"
+                  href="contacts.html"
+                  >Контакты</a
+                >
               </li>
             </ul>
             <div class="header__contacts">
@@ -861,5 +913,12 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
+    <script>
+      var mixer = mixitup('.contacts__cities', {
+        load: {
+          filter: '.moscow',
+        },
+      });
+    </script>
   </body>
 </html>

@@ -27,9 +27,3 @@ var swiper = new Swiper('.projects__swiper', {
   keyboard: true,
 });
 Fancybox.bind('[data-fancybox]', {});
-
-var mixer = mixitup('.contacts__cities', {
-  load: {
-    filter: '.moscow',
-  },
-});
