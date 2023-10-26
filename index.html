@@ -93,7 +93,9 @@
                 <a class="header__menu-link" href="#">Об амбарной доске</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="#">Наши работы</a>
+                <a class="header__menu-link" href="gallery.html" target="_blank"
+                  >Наши работы</a
+                >
               </li>
               <li class="header__menu-item">
                 <a class="header__menu-link" href="#">О нас</a>
@@ -281,7 +283,10 @@
             </div>
           </div>
         </section>
-        <section class="promo">
+        <section
+          class="promo"
+          style="background-image: url(../images/promo-bg.png)"
+        >
           <div class="container">
             <h2 class="promo__title-top title-top">есть вопросы?</h2>
             <h2 class="title-bottom">с радостью ответим на них!</h2>
@@ -302,9 +307,8 @@
                   </label>
                   <input
                     class="promo__form-input"
-                    id="phone"
                     type="tel"
-                    placeholder="(999) 999-99-99"
+                    placeholder="+7 (999) 999-99-99"
                   />
                 </div>
                 <button class="promo__form-btn btn" type="submit">
@@ -553,7 +557,7 @@
                 </label>
                 <input
                   class="cooperate__form-input"
-                  id="phones"
+                  id="phone"
                   type="tel"
                   placeholder="(999) 999-99-99"
                 />
@@ -596,7 +600,7 @@
               </div>
             </div>
 
-            <div class="contacts__cities">
+            <div class="contacts__cities" id="fancybox1">
               <div class="contacts__city mix moscow">
                 <div class="contacts__city-map">
                   <div style="position: relative; overflow: hidden">

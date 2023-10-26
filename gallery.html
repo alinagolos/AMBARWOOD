@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMBARWOOD</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&family=Montserrat:wght@400;500;600&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/mixitup.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container-fluid">
+          <nav class="header__nav">
+            <a class="header__logo" href="#"
+              ><img class="header__logo-img" src="images/logo.svg" alt="logo"
+            /></a>
+            <ul class="header__menu">
+              <li class="header__menu-item header__menu-item--active">
+                <a class="header__menu-link" href="#">Каталог</a>
+                <ul class="header__submenu">
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"
+                      >Амбарная доска для стен
+                    </a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"
+                      >Старая половая доска</a
+                    >
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"
+                      >Старые балки и фальшбалки</a
+                    >
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#">Стеновые панели</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"> Двери</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#">
+                      Мебель из старых лодок</a
+                    >
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"> Зеркала</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#"
+                      >Ковры (винтажные)</a
+                    >
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#">
+                      Старинный кирпич (императорский)</a
+                    >
+                  </li>
+                  <li class="header__submenu-item">
+                    <a class="header__submenu-link" href="#">Услуги</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Об амбарной доске</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Наши работы</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">О нас</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Блог</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__contacts">
+              <a class="header__contacts-phone" href="tel:+79295908287"
+                >+7 (929) 590 82-87</a
+              >
+              <p class="header__contacts-text">Москва и Санкт-Петербург</p>
+            </div>
+            <a class="header__btn btn" href="#">Консультация</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__wrapper">
+              <a class="breadcrumbs__link breadcrumbs__link--back" href="#">
+                Назад
+              </a>
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a
+                    class="breadcrumbs__link breadcrumbs__link--active"
+                    href="#"
+                  >
+                    Главная /
+                  </a>
+                </li>
+
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#"> Наши работы </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section
+          class="banner-one"
+          style="background-image: url(images/gallery-bg.png)"
+        >
+          <div class="container-fluid">
+            <h3 class="banner-one__title">Наши работы</h3>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <div class="container">
+            <h3 class="gallery__title">ФИЛЬТРЫ:</h3>
+            <div class="gallery__buttons">
+              <button class="gallery__btn" type="button" data-filter=".all">
+                Все
+              </button>
+              <button
+                class="gallery__btn"
+                type="button"
+                data-filter=".apartments"
+              >
+                Квартиры
+              </button>
+              <button class="gallery__btn" type="button" data-filter=".cottage">
+                Коттеджы
+              </button>
+              <button
+                class="gallery__btn"
+                type="button"
+                data-filter=".commercial"
+              >
+                Коммерческие помещения
+              </button>
+              <button class="gallery__btn" type="button" data-filter=".cafe">
+                Кафе Рестораны
+              </button>
+              <button class="gallery__btn" type="button" data-filter=".beam">
+                Фальш-балки
+              </button>
+              <button
+                class="gallery__btn"
+                type="button"
+                data-filter=".projects"
+              >
+                Проекты до 20 м²
+              </button>
+            </div>
+
+            <div
+              class="gallery__fancybox"
+              id="fancybox2"
+              data-ref="container-2"
+            >
+              <div class="gallery__items mix all">
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <a href="#" class="pagination__arrow">
+                    <img
+                      class="pagination__arrow-icon"
+                      src="images/gallery-arrowprev.svg"
+                      alt="arrow"
+                  /></a>
+
+                  <ul class="pagination__list">
+                    <li
+                      class="pagination__list-item pagination__list-item--active"
+                    >
+                      <a class="pagination__list-num" href="#">1</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">2</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">3</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">4</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">5</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">6</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">7</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">8</a>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="pagination__arrow">
+                    <img
+                      class="pagination__arrow-icon"
+                      src="images/gallery-arrownext.svg"
+                      alt="arrow"
+                  /></a>
+                </div>
+              </div>
+              <div class="gallery__items mix apartments">
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__items mix cottage">
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__items mix commercial">
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__items mix cafe">
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__items mix beam">
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__items mix projects">
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/1.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Квартира в Москве</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/2.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">
+                      COFFEE FIRST на Крымском валу
+                    </h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="gallery__items-wrapper">
+                  <a class="gallery__item" href="#">
+                    <img src="images/gallery/3.png" alt="image" />
+                  </a>
+                  <div class="gallery__text">
+                    <h4 class="gallery__text-title">Ширма из амбарной доски</h4>
+                    <a class="gallery__text-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="promo"
+          style="background-image: url(../images/promo-bg.png)"
+        >
+          <div class="container">
+            <h2 class="promo__title-top title-top">есть вопросы?</h2>
+            <h2 class="title-bottom">с радостью ответим на них!</h2>
+            <div class="promo__content">
+              <form class="promo__form">
+                <div class="promo__form-name">
+                  <label class="promo__form-label" for="name">Ваше имя </label>
+                  <input
+                    class="promo__form-input"
+                    id="name"
+                    type="text"
+                    placeholder="Имя"
+                  />
+                </div>
+                <div class="promo__form-phone">
+                  <label class="promo__form-label" for="phone"
+                    >Ваш телефон
+                  </label>
+                  <input
+                    class="promo__form-input"
+                    type="tel"
+                    placeholder="+7 (999) 999-99-99"
+                  />
+                </div>
+                <button class="promo__form-btn btn" type="submit">
+                  Оставить заявку
+                </button>
+              </form>
+              <div class="promo-contacts">
+                <p class="promo-contacts-text">
+                  Оставьте заявку или позвоните нам по номеру:
+                </p>
+                <a class="promo-contacts-phone" href="tel:+79295908287"
+                  >+7 (929) 590 82-87</a
+                >
+              </div>
+            </div>
+            <p class="promo__agreement">
+              Нажимая на кнопку “Оставить заявку”, вы соглашаетесь с Политикой
+              конфиденциальности данных
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer class="footer footer-one">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__logo">
+              <a class="footer__logo-link" href="#"
+                ><img
+                  class="footer__logo-img"
+                  src="images/logo-footer.svg"
+                  alt="logo"
+              /></a>
+              <p class="footer__copyright">© 2023. Все права защищены</p>
+            </div>
+
+            <div class="footer__menu">
+              <h3 class="footer__title">МЕНЮ</h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Каталог</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Об амбарной доске</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Наши работы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">О нас</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__info">
+              <h3 class="footer__title">ИНФОРМАЦИЯ</h3>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a class="footer__link" href="#"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Публичная оферта</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Доставка</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Оплата</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__contacts">
+              <h3 class="footer__title">КОНТАКТЫ</h3>
+              <p class="footer__contacts-adress">
+                Москва, ул. Тимирязевская, д.1, стр.2
+              </p>
+              <p class="footer__contacts-adress">
+                Санкт-Петербург, ул. Швецова, д.41К
+              </p>
+              <a class="footer__contacts-phone" href="tel:+79295908287"
+                >+7 (929) 590 82-87</a
+              >
+              <ul class="footer__contacts-social">
+                <li class="footer__contacts-social-item">
+                  <a class="footer__contacts-social-link" href="#">
+                    <img src="images/whatsapp.svg" alt="whatsapp"
+                  /></a>
+                </li>
+                <li class="footer__contacts-social-item">
+                  <a class="footer__contacts-social-link" href="#">
+                    <img src="images/vk.svg" alt="vk"
+                  /></a>
+                </li>
+                <li class="footer__contacts-social-item">
+                  <a class="footer__contacts-social-link" href="#">
+                    <img src="images/youtube.svg" alt="yt"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var mixer2 = mixitup('.gallery__fancybox', {
+        load: {
+          filter: '.all',
+        },
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

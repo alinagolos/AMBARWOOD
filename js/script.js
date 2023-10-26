@@ -26,20 +26,7 @@ var swiper = new Swiper('.projects__swiper', {
   mousewheel: true,
   keyboard: true,
 });
-
 Fancybox.bind('[data-fancybox]', {});
-
-const inputs = document.querySelector('#phones');
-
-window.intlTelInput(inputs, {
-  separateDialCode: true,
-  placeholderNumberType: 'MOBILE',
-  autoPlaceholder: 'off',
-  initialCountry: 'ru',
-  preferredCountries: ['ru', 'kz', 'by'],
-  utilsScript:
-    'https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js',
-});
 
 var mixer = mixitup('.contacts__cities', {
   load: {
