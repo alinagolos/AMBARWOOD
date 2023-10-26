@@ -1183,3 +1183,30 @@ breadcrumbs__link--back {
 .contacts__cities-one {
   margin-bottom: 72px;
 }
+
+.about-one__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  row-gap: 41px;
+  column-gap: 55px;
+  margin-bottom: 103px;
+}
+
+.about-one__content-img {
+  width: clamp(21.813rem, 14.711rem + 29.14vw, 36.563rem);
+}
+.about-one__content-text {
+  width: clamp(21.375rem, 16.38rem + 20.49vw, 31.75rem);
+}
+.about-one__content-text1 {
+  margin-bottom: 22px;
+}
+
+.clients__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 76px;
+  margin: 37px 0 91px;
+}
