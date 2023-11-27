@@ -11,6 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&family=Montserrat:wght@400;500;600&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -153,26 +165,295 @@
       <main class="main">
         <div class="breadcrumbs">
           <div class="container">
-            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
-              Назад
-            </a>
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
-                  Главная
-                </a>
-              </li>
+            <div class="breadcrumbs__wrapper">
+              <a class="breadcrumbs__link breadcrumbs__link--back" href="#">
+                Назад
+              </a>
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a
+                    class="breadcrumbs__link breadcrumbs__link--active"
+                    href="#"
+                  >
+                    Главная /
+                  </a>
+                </li>
 
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#"> Наши работы </a>
-              </li>
-            </ul>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#"> Об амбарной доске </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <section
+          class="banner-one"
+          style="background-image: url(images/aboutplankbg.png)"
+        >
+          <div class="container-fluid">
+            <h3 class="banner-one__title">Об амбарной доске</h3>
+          </div>
+        </section>
+
+        <section class="about-plank-top">
+          <div class="container">
+            <div class="about-plank__content">
+              <img
+                class="about-plank__content-img"
+                src="images/about-img.png"
+                alt="img"
+              />
+              <div class="about-plank__content-text">
+                <h3 class="title-top">история</h3>
+                <h3 class="title-bottom">амбарной доски</h3>
+
+                <p class="about-plank__content-text1">
+                  В России сохранились деревянные амбары старше 50 лет. Мы
+                  разбираем их, обрабатываем доски специальным средством от
+                  жуков и грязи, убираем гвозди. Каждая доска шлифуется вручную.
+                </p>
+                <p class="about-plank__content-text2">
+                  В результате получаются амбарные доски премиум класса, каждая
+                  уникального цвета, которые могут использоваться как в
+                  интерьере, так и на улице.
+                </p>
+              </div>
+              <div class="about-plank__content-text">
+                <h3 class="title-top">особенности</h3>
+                <h3 class="title-bottom">амбарной доски</h3>
+                <p class="about-plank__content-text1">
+                  Амбарные доски, это материал созданный историей, природой и
+                  руками. Сначала природа создавала уникальный цвет и фактуру
+                  амбарной доски морозами, ветрами и солнцем.
+                </p>
+                <p class="about-plank__content-text2">
+                  Уникальность амбарных досок в том, что в отличие от
+                  состаренных досок нет одинаковых и похожих. Все амбарные доски
+                  обладают своей уникальной фактурой.
+                </p>
+                <p class="about-plank__content-text3">
+                  При этом доски оставляют свои технические свойства и доска
+                  прослужит 100 лет и более.
+                </p>
+              </div>
+              <img
+                class="about-plank__content-img"
+                src="images/aboutblanckimg.png"
+                alt="img"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="about-plank">
+          <div class="container">
+            <div class="about-plank__content">
+              <img
+                class="about-plank__content-img"
+                src="images/aboutplankbottomimg.png"
+                alt="img"
+              />
+              <div class="about-plank__content-text">
+                <h3 class="title-top">Доска из самых</h3>
+                <h3 class="title-bottom">отдаленных мест</h3>
+
+                <p class="about-plank__content-text1">
+                  Самая красивая доска находится в самых далеких уголка нашей
+                  родины, так что на поиски мы всегда выезжаем экспедициями
+                </p>
+                <p class="about-plank__content-text2">
+                  В некоторые места невозможно проехать летом, так что большую
+                  часть доски заготавливаем зимой, пока стоит лед
+                </p>
+                <p class="about-plank__content-text2">
+                  Мы не браконьерствуем и не расхищаем поселения. Вся доска
+                  снимается по согласованию областными властями
+                </p>
+              </div>
+              <div class="about-plank__content-text">
+                <h3 class="title-top">Все сделано</h3>
+                <h3 class="title-bottom">руками</h3>
+                <p class="about-plank__content-text1">
+                  Сначала мы очищаем доску от грязи, гвоздей и от насекомых.
+                </p>
+                <p class="about-plank__content-text2">
+                  Обрабатываем все стороны, кроме лицевой, на станках, что бы
+                  вернуть доске геометрию
+                </p>
+                <p class="about-plank__content-text3">
+                  Шлифуем и брашируем лицевую сторону ручным инструментом, так
+                  как только ручной инструмент позволяет сохранить уникальность
+                  каждой доски
+                </p>
+              </div>
+              <img
+                class="about-plank__content-img"
+                src="images/aboutplankbottomimg1.png"
+                alt="img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="about-plank-bottom">
+          <div class="container">
+            <div class="about-plank-bottom__content">
+              <div class="about-plank__content-text">
+                <h3 class="title-top">Экологичность</h3>
+                <h3 class="title-bottom">амбарной доски</h3>
+
+                <p class="about-plank__content-text1">
+                  Старинные доски охватывают аж сразу 2 аспекта экологичности:
+                </p>
+                <p class="about-plank__content-text2">
+                  Снижение нагрузки на природу, так как материал повторного
+                  использования и не требует вырубки лесов и как следствие не
+                  оставляет углеродного следа.
+                </p>
+                <p class="about-plank__content-text2">
+                  Экологичность самого материала, который в отличие от ламината
+                  полностью натурален.
+                </p>
+              </div>
+
+              <img
+                class="about-plank__content-img"
+                src="images/aboutplankbottomimg2.png"
+                alt="img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="about-plank-swiper">
+          <div class="container">
+            <h2 class="title-top">отделка</h2>
+            <h2 class="title-bottom">амбарной доски</h2>
+            <div class="about-plank__swiper">
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Старая доска</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Старинная вагонка</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Старинная вагонка</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Стеновая панель 2</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Стеновая панель 2</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Стеновая панель 2</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Стеновая панель 2</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Стеновая панель 2</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+              <div class="catalog-one__item">
+                <img
+                  class="catalog-one__item-img"
+                  src="images/catalog-img.png"
+                  alt="img"
+                />
+                <h4 class="catalog-one__item-title">Стеновая панель 2</h4>
+
+                <p class="catalog-one__item-price">3400 руб.</p>
+
+                <a class="btn catalog__btn" href="#">Подробнее</a>
+                <a class="btn-inh catalog__btn-inh" href="#">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
           class="promo"
-          style="background-image: url(../images/promo-bg.png)"
+          style="background-image: url(images/promo-bg.png)"
         >
           <div class="container">
             <h2 class="promo__title-top title-top">есть вопросы?</h2>
@@ -303,6 +584,42 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+
+    <script>
+      $('.about-plank__swiper').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+
+        adaptiveHeight: true,
+        dotsClass: 'custom-pagination',
+        prevArrow:
+          '<button type="button" class="article-slider__arrow article-slider__arrowleft "><img src="images/prev.svg" alt="prev"></button>',
+        nextArrow:
+          '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="images/next.svg" alt="next"></button>',
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
   </body>
 </html>

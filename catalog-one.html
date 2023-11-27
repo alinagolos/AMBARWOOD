@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&family=Montserrat:wght@400;500;600&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -153,219 +159,173 @@
       <main class="main">
         <div class="breadcrumbs">
           <div class="container">
-            <div class="breadcrumbs__wrapper">
-              <a class="breadcrumbs__link breadcrumbs__link--back" href="#">
+            <div class="breadcrumb-wrapper">
+              <a class="breadcrumbs__link breadcrumbs__link--one" href="#">
                 Назад
               </a>
-              <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item">
-                  <a
-                    class="breadcrumbs__link breadcrumbs__link--active"
-                    href="#"
-                  >
-                    Главная /
-                  </a>
-                </li>
-
-                <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#"> Блог </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-        <section
-          class="banner-one"
-          style="background-image: url(images/contacts-banner.png)"
-        >
-          <div class="container-fluid">
-            <h3 class="banner-one__title">Блог</h3>
+        <section class="catalog-one">
+          <div class="container">
+            <div class="catalog-one__wrapper">
+              <div class="catalog-one__gallery">
+                <div class="catalog-one__swiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/catalog-oneimgbig.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/catalog-oneimgbig.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/catalog-oneimgbig.png" />
+                    </div>
+                  </div>
+                  <div class="catalog-one__button catalog-one__button-next">
+                    <img src="images/catalog-onenext.svg" alt="next" />
+                  </div>
+                  <div class="catalog-one__button catalog-one__button-prev">
+                    <img src="images/catalog-oneprev.svg" alt="prev" />
+                  </div>
+                </div>
+                <div thumbsSlider="" class="catalog-one__swiper1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/catalog-oneimg.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/catalog-oneimg.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/catalog-oneimg.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-one__card">
+                <h4 class="catalog-one__card-title">Амбарная доска крашеная</h4>
+                <p class="catalog-one__card-text">
+                  Цветная амбарная доска с построек старше 1950г. Калиброванная
+                  по ширине и толщине. Лицевая сторона обработана легкой щеткой,
+                  для очистки от крупных хлопьев краски
+                </p>
+                <p class="catalog-one__card-numb">На складе 976 метров</p>
+                <h5 class="catalog-one__card-form">Выберите вариацию:</h5>
+                <label class="catalog-one__card-label">
+                  Узкая доска (8-20см)
+                  <input
+                    type="radio"
+                    class="catalog-one__card-input"
+                    value="1"
+                    name="a"
+                  />
+                  <span class="catalog-one__card-span"></span>
+                </label>
+                <label class="catalog-one__card-label">
+                  Широкая доска (22-30см)
+                  <input
+                    type="radio"
+                    class="catalog-one__card-input"
+                    value="2"
+                    name="a"
+                  />
+                  <span class="catalog-one__card-span"></span>
+                </label>
+                <div class="catalog-one__card-wrapper">
+                  <p class="catalog-one__card-price">2900 руб.</p>
+                  <a class="btn catalog-one__card-btn" href="#">Заказать</a>
+                </div>
+                <p class="catalog-one__card-credit">
+                  Рассрочка 0%. Без первоначального взноса.
+                </p>
+                <div class="catalog-one__card-nature">
+                  <img
+                    class="catalog-one__card-nature-img"
+                    src="images/catalog-onenatura.svg"
+                    alt="save nature"
+                  />
+                  <div>
+                    <h5 class="catalog-one__card-nature-title">
+                      Поддержим экологию вместе!
+                    </h5>
+                    <p class="catalog-one__card-nature-text">
+                      С каждого заказа переводим
+                      <span style="color: #399143; font-weight: 700">1%</span> в
+                      фонд "Подари дерево"
+                    </p>
+
+                    <p class="catalog-one__card-nature-sert">
+                      Вы получите официальный сертификат
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-
-        <section class="blog-one">
+        <section class="examples">
           <div class="container">
-            <ul class="blog-one__list">
-              <li class="blog-one__item">
-                <img
-                  class="blog-one__item-img"
-                  src="images/blog-img.png"
-                  alt="img"
-                />
-                <div class="blog-one__item-wrapper">
-                  <time class="blog-one__item-date" datetime="2023-05-10"
-                    >10.05.2023</time
-                  >
-                  <a class="blog-one__item-title" href="#">
-                    Как ухаживать за амбарной доской
-                  </a>
-
-                  <div class="blog-one__item-inner">
-                    <p class="blog-one__item-text">
-                      Уход за амбарной доской довольно прост. Уход довольно
-                      прост. Уход за амбарной доской довольно прост.
-                    </p>
-                    <a class="blog-one__item-link" href="#">Читать</a>
-                  </div>
+            <h2 class="title-top">примеры работ</h2>
+            <h2 class="title-bottom">с этой доской</h2>
+            <div class="examples__gallery">
+              <div class="gallery__items-wrapper">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/1.png" alt="image" />
+                </a>
+                <div class="gallery__text">
+                  <h4 class="gallery__text-title">Квартира в Москве</h4>
+                  <a class="gallery__text-link" href="#">Подробнее</a>
                 </div>
-              </li>
-              <li class="blog-one__item">
-                <img
-                  class="blog-one__item-img"
-                  src="images/blog-img.png"
-                  alt="img"
-                />
-                <div class="blog-one__item-wrapper">
-                  <time class="blog-one__item-date" datetime="2023-05-10"
-                    >10.05.2023</time
-                  >
-                  <a class="blog-one__item-title" href="#">
-                    Как ухаживать за амбарной доской
-                  </a>
-
-                  <div class="blog-one__item-inner">
-                    <p class="blog-one__item-text">
-                      Уход за амбарной доской довольно прост. Уход довольно
-                      прост. Уход за амбарной доской довольно прост.
-                    </p>
-                    <a class="blog-one__item-link" href="#">Читать</a>
-                  </div>
+              </div>
+              <div class="gallery__items-wrapper">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/2.png" alt="image" />
+                </a>
+                <div class="gallery__text">
+                  <h4 class="gallery__text-title">Квартира в Москве</h4>
+                  <a class="gallery__text-link" href="#">Подробнее</a>
                 </div>
-              </li>
-              <li class="blog-one__item">
-                <img
-                  class="blog-one__item-img"
-                  src="images/blog-img.png"
-                  alt="img"
-                />
-                <div class="blog-one__item-wrapper">
-                  <time class="blog-one__item-date" datetime="2023-05-10"
-                    >10.05.2023</time
-                  >
-                  <a class="blog-one__item-title" href="#">
-                    Как ухаживать за амбарной доской
-                  </a>
-
-                  <div class="blog-one__item-inner">
-                    <p class="blog-one__item-text">
-                      Уход за амбарной доской довольно прост. Уход довольно
-                      прост. Уход за амбарной доской довольно прост.
-                    </p>
-                    <a class="blog-one__item-link" href="#">Читать</a>
-                  </div>
+              </div>
+              <div class="gallery__items-wrapper">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/3.png" alt="image" />
+                </a>
+                <div class="gallery__text">
+                  <h4 class="gallery__text-title">Квартира в Москве</h4>
+                  <a class="gallery__text-link" href="#">Подробнее</a>
                 </div>
-              </li>
-              <li class="blog-one__item">
-                <img
-                  class="blog-one__item-img"
-                  src="images/blog-img.png"
-                  alt="img"
-                />
-                <div class="blog-one__item-wrapper">
-                  <time class="blog-one__item-date" datetime="2023-05-10"
-                    >10.05.2023</time
-                  >
-                  <a class="blog-one__item-title" href="#">
-                    Как ухаживать за амбарной доской
-                  </a>
-
-                  <div class="blog-one__item-inner">
-                    <p class="blog-one__item-text">
-                      Уход за амбарной доской довольно прост. Уход довольно
-                      прост. Уход за амбарной доской довольно прост.
-                    </p>
-                    <a class="blog-one__item-link" href="#">Читать</a>
-                  </div>
-                </div>
-              </li>
-              <li class="blog-one__item">
-                <img
-                  class="blog-one__item-img"
-                  src="images/blog-img.png"
-                  alt="img"
-                />
-                <div class="blog-one__item-wrapper">
-                  <time class="blog-one__item-date" datetime="2023-05-10"
-                    >10.05.2023</time
-                  >
-                  <a class="blog-one__item-title" href="#">
-                    Как ухаживать за амбарной доской
-                  </a>
-
-                  <div class="blog-one__item-inner">
-                    <p class="blog-one__item-text">
-                      Уход за амбарной доской довольно прост. Уход довольно
-                      прост. Уход за амбарной доской довольно прост.
-                    </p>
-                    <a class="blog-one__item-link" href="#">Читать</a>
-                  </div>
-                </div>
-              </li>
-              <li class="blog-one__item">
-                <img
-                  class="blog-one__item-img"
-                  src="images/blog-img.png"
-                  alt="img"
-                />
-                <div class="blog-one__item-wrapper">
-                  <time class="blog-one__item-date" datetime="2023-05-10"
-                    >10.05.2023</time
-                  >
-                  <a class="blog-one__item-title" href="#">
-                    Как ухаживать за амбарной доской
-                  </a>
-
-                  <div class="blog-one__item-inner">
-                    <p class="blog-one__item-text">
-                      Уход за амбарной доской довольно прост. Уход довольно
-                      прост. Уход за амбарной доской довольно прост.
-                    </p>
-                    <a class="blog-one__item-link" href="#">Читать</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <div class="pagination">
-              <a href="#" class="pagination__arrow">
-                <img
-                  class="pagination__arrow-icon"
-                  src="images/gallery-arrowprev.svg"
-                  alt="arrow"
-              /></a>
-
-              <ul class="pagination__list">
-                <li class="pagination__list-item pagination__list-item--active">
-                  <a class="pagination__list-num" href="#">1</a>
-                </li>
-                <li class="pagination__list-item">
-                  <a class="pagination__list-num" href="#">2</a>
-                </li>
-                <li class="pagination__list-item">
-                  <a class="pagination__list-num" href="#">3</a>
-                </li>
-                <li class="pagination__list-item">
-                  <a class="pagination__list-num" href="#">4</a>
-                </li>
-                <li class="pagination__list-item">
-                  <a class="pagination__list-num" href="#">5</a>
-                </li>
-                <li class="pagination__list-item">
-                  <a class="pagination__list-num" href="#">6</a>
-                </li>
-                <li class="pagination__list-item">
-                  <a class="pagination__list-num" href="#">7</a>
-                </li>
-                <li class="pagination__list-item">
-                  <a class="pagination__list-num" href="#">8</a>
-                </li>
-              </ul>
-
-              <a href="#" class="pagination__arrow">
-                <img
-                  class="pagination__arrow-icon"
-                  src="images/gallery-arrownext.svg"
-                  alt="arrow"
-              /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="conditions">
+          <div class="container">
+            <div class="conditions__wrapper">
+              <div class="conditions__delivery">
+                <h3 class="title-top">доставка</h3>
+                <p class="conditions__delivery-text">
+                  Курьерская доставка по Москве и Санкт-Петербургу. В другие
+                  регионы доставка транспортными компаниями.
+                </p>
+                <p class="conditions__delivery-text">
+                  Условия и стоимость уточните, пожалуйста, у наших менеджеров.
+                  Напишите нам в WhatsApp или оставьте ваш телефон и мы вам
+                  обязательно перезвоним.
+                </p>
+              </div>
+              <div class="conditions__payment">
+                <h3 class="title-bottom">оплата</h3>
+                <h5 class="conditions__payment-title">Варианты оплаты</h5>
+                <ul class="conditions__payment-list">
+                  <li class="conditions__payment-item">Наличными</li>
+                  <li class="conditions__payment-item">Переводом на карту</li>
+                  <li class="conditions__payment-item">
+                    Беспроцентная рассрочка без первоначального взноса
+                  </li>
+                  <li class="conditions__payment-item">Безналичная оплата</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -502,6 +462,22 @@
         </div>
       </footer>
     </div>
+    <script>
+      var swiper = new Swiper('.catalog-one__swiper1', {
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper('.catalog-one__swiper2', {
+        navigation: {
+          nextEl: '.catalog-one__button-next',
+          prevEl: '.catalog-one__button-prev',
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
